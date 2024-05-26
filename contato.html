@@ -3,41 +3,76 @@
 
 <head>
     <!-- Aqui eu defino o título da minha página -->
-    <title>Contato</title>
+    <title>Início</title>
     <meta charset="utf-8">
     <meta name="keywords" content="html, css, javascript">
     <meta name="description" content="Trabalho HTML + CSS">
     <meta name="author" content="Pedro Nascimento Silva">
     <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link href="lib/css-local.css" rel="stylesheet">
   
 </head>
 
 <body>
 
 
-<div>
-Informações de contato:
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example" id="topo">
+    <div class="topnome"><h4 class="topnomecor">Pedro Nascimento Silva</h4></div>
+    <div class="container-fluid">
+        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        s<a href="https://wa.me/5532984823482?text=" target="_blank"><img src="assets/img/whatsapp.png" width="40px" height="40px"></a> &nbsp  &nbsp
-        <a href="https://www.instagram.com/pns.silva/" target="_blank"><img src="assets/img/instagram.png" width="40px" height="40px"></a> &nbsp  &nbsp
-        <a href="https://www.linkedin.com/in/pedronascimentosilva/" target="_blank"><img src="assets/img/linkedin.png" width="40px" height="40px"></a>
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="btn btn-outline-success" aria-current="page" href="index.html">Principal</a></li>&nbsp 
+            <li class="nav-item"><a class="btn btn-outline-success" href="sobremim.html">Sobre Mim</a></li>&nbsp 
+            <li class="nav-item"><a class="btn btn-outline-success" href="formacao.html">Formação Acadêmica</a></li>&nbsp 
+            <li class="nav-item"><a class="btn btn-outline-success" href="profissional.html">Atuação Profissional</a></li>&nbsp 
+            <li class="nav-item"><a class="btn btn-outline-success" href="contato.html">Contato</a></li>&nbsp 
+            
+        </ul>
 
+        
+      </div>
+    </div>
+</nav>
+
+
+<div class="fotocapa">
+    <img src="assets/img/pedro.jpeg" class="fotoperfil">
+    
 </div>
 
+<body>
+<br>
+<div class="centralizar">
+
 <div>
-    Entre em contato
+<h4>Informações de contato:</h4>
+
+        <a href="https://wa.me/5532984823482?text=" target="_blank"><img src="assets/img/what.jpg" width="40px" height="40px"></a> &nbsp  &nbsp
+        <a href="https://www.instagram.com/pns.silva/" target="_blank"><img src="assets/img/insta.jpg" width="40px" height="40px"></a> &nbsp  &nbsp
+        <a href="https://www.linkedin.com/in/pedronascimentosilva/" target="_blank"><img src="assets/img/linkd.jpg" width="40px" height="40px"></a>
+
+</div>
+<br><br>
+
+<div>
+    <h6>Entre em contato</h6>
     <form action="contato.html">
         
-        <input placeholder="Digite seu nome" type="text" id="ipt_nome" name="ipt_nome">
+        <input class="borda"   placeholder="Digite seu nome" type="text" id="ipt_nome" name="ipt_nome">
 
         <br><br>
 
        
-        <input placeholder="Email" type="email" id="ipt_email" name="ipt_email"><br><br>
+        <input class="borda"  placeholder="Email" type="email" id="ipt_email" name="ipt_email"><br><br>
         
         
-        <select tabindex="1" id="#" name="input[3|Assunto]" required="" aria-required="true">
+        <select class="borda"  tabindex="1" id="#" name="input[3|Assunto]" required="" aria-required="true">
             <option value="" selected="" disabled="">Assunto *</option>
             
               
@@ -60,15 +95,27 @@ Informações de contato:
         <br>
       
         <br><br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Cancelar">
+        <input id="bordabotao1" type="submit" value="Enviar" class="btn btn-success" > 
+        <input id="bordabotao2" type="reset" value="Cancelar" class="btn btn-success">
         
 
     </form>
 
 </div>
+</div>
 
 
+
+
+<div class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <div class="redesocial">
+    <a href="https://wa.me/5532984823482?text=" target="_blank"><img src="assets/img/whatsapp.png" width="40px" height="40px"></a> &nbsp  &nbsp
+    <a href="https://www.instagram.com/pns.silva/" target="_blank"><img src="assets/img/instagram.png" width="40px" height="40px"></a> &nbsp  &nbsp
+    <a href="https://www.linkedin.com/in/pedronascimentosilva/" target="_blank"><img src="assets/img/linkedin.png" width="40px" height="40px"></a>
+    
+    
+</div>
+</div>
 </body>
 
 </html>
