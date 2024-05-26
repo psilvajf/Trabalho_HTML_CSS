@@ -10,21 +10,14 @@
     <meta name="author" content="Pedro Nascimento Silva">
     <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-    
-    
-
+  
 </head>
 
-<body syt>
+<body style="background-color: rgba(179, 173, 173, 0.993);">
 
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example" style="height:100px;">
-    <div style="width:50%;"><h4 style="color: white;">Portifilo - Pedro Nascimento Silva</h4></div>
+    <div style="width:50%;"><h4 style="color: white;">Pedro Nascimento Silva</h4></div>
     <div class="container-fluid">
         
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,12 +26,11 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="btn btn-outline-success" aria-current="page" href="#">Principal</a></li>
-            <li class="nav-item"><a class="btn btn-outline-success" href="#">Sobre Mim</a></li>
-            <li class="nav-item"><a class="btn btn-outline-success" href="#">Formação</a></li>
-            <li class="nav-item"><a class="btn btn-outline-success" href="#">Formação Acadêmica</a></li>
-            <li class="nav-item"><a class="btn btn-outline-success" href="#">Atuação Profissional</a></li>
-            <li class="nav-item"><a class="btn btn-outline-success" href="#">Contato</a></li>
+            <li class="nav-item"><a class="btn btn-outline-success" aria-current="page" href="index.html">Principal</a></li>&nbsp 
+            <li class="nav-item"><a class="btn btn-outline-success" href="sobremim.html">Sobre Mim</a></li>&nbsp 
+            <li class="nav-item"><a class="btn btn-outline-success" href="formacao.html">Formação Acadêmica</a></li>&nbsp 
+            <li class="nav-item"><a class="btn btn-outline-success" href="profissional.html">Atuação Profissional</a></li>&nbsp 
+            <li class="nav-item"><a class="btn btn-outline-success" href="contato.html">Contato</a></li>&nbsp 
             
         </ul>
 
@@ -64,7 +56,7 @@ align-items: center;
 justify-content: center;
 
 padding-top:4%;
-
+padding-left:45%;
 }
 
 </style>
@@ -74,45 +66,54 @@ padding-top:4%;
     
 </div>
 
- 
 
-  
+
+<div class="card-group" style="padding-top:50px;">
+    <div class="card">
+      <img src="assets/img/projeto.jpg" class="card-img-top" alt="..."height="200" >
+      <div class="card-body">
+        <h5 class="card-title">Portfólio</h5>
+        <p class="card-text">Projetos desenvolvidos</p>
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-outline-success" href="portfolio.html">Mais Detalhes</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="assets/img/tec.jpg"  alt="..." height="200">
+      <div class="card-body">
+        <h5 class="card-title">Tecnologias</h5>
+        <p class="card-text">Vejam as tecnologias utilizadas em meu portfolio</p>
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-outline-success" href="tecnologias.html">Mais Detalhes</a>
+      </div>
+    </div>
+    <div class="card">
       
+      <iframe class="card-img-top" height="200" src="https://www.youtube.com/embed/C0HZh5Y7zao" title="RH do Futuro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="card-body">
+        <h5 class="card-title">RH do Futuro</h5>
+        <p class="card-text">Protagonismo dos colaboradores, descentralização do RH, gestão em tempo real: sua empresa está preparada para a nova era? 
+
+            Venha para a transformação digital com quem faz o RH do futuro hoje</p>
+      </div>
+      <div class="card-footer">
+        <a class="btn btn-outline-success" href="#">Mais Detalhes</a>
+      </div>
+    </div>
+  </div>
     
-<br>
-<div class="card text-bg-success mb-3" style="max-width: 18rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h5 class="card-title">Success card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-
-
-<div style="padding-left:50%;"> 
-<div class="card text-bg-secondary mb-3" style="max-width: 18rem;" >
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h5 class="card-title">Secondary card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-</div>
-</div>
-
-
-<br>
-<br>
 
 
 
-
-
+<br><br><br><br><br><br><br><br>
 
 
 
 <!-- Rodapé -->
-    <div class="w-auto p-3" style="background-color:#343a40; height:150px;">
+
+    <div class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
         <div class="centro">
         <a href="https://wa.me/5532984823482?text=" target="_blank"><img src="assets/img/whatsapp.png" width="40px" height="40px"></a> &nbsp  &nbsp
         <a href="https://www.instagram.com/pns.silva/" target="_blank"><img src="assets/img/instagram.png" width="40px" height="40px"></a> &nbsp  &nbsp
