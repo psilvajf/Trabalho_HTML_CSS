@@ -7,18 +7,20 @@
       <meta name="keywords" content="html, css, javascript">
       <meta name="description" content="Trabalho HTML + CSS">
       <meta name="author" content="Pedro Nascimento Silva">
+      <!-- Linkando tecnologia bootstrap e arquivos css+javascript -->
       <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
       <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
       <link href="lib/css-local.css" rel="stylesheet">
    </head>
    <body>
-      
-      <script src="lib/menu.js"></script>
+      <!-- Puxando o menu da página com javascript -->
+      <script src="lib/menu.js" id="jvmenu"></script>
 
 
+       <!-- Puxando o menu da página com javascript -->
       <div class="card-group" id="iniciocard">
-         <div class="card">
-            <img src="assets/img/projeto.jpg" class="card-img-top" alt="..."height="200" >
+         <div class="card" id="cardportfolio">
+            <img src="assets/img/projeto.jpg" class="card-img-top" height="200" id="imgportfolio">
             <div class="card-body">
                <h5 class="card-title">Portfólio</h5>
                <p class="card-text">Projetos desenvolvidos</p>
@@ -27,8 +29,8 @@
                <a class="btn btn-outline-success" href="portfolio.html" target="_blank">Mais Detalhes</a>
             </div>
          </div>
-         <div class="card">
-            <img class="card-img-top" src="assets/img/tec.jpg"  alt="..." height="200">
+         <div class="card" id="cardtecnologias">
+            <img class="card-img-top" src="assets/img/tec.jpg" height="200" id="imgtecnologias">
             <div class="card-body">
                <h5 class="card-title">Tecnologias</h5>
                <p class="card-text">Vejam as tecnologias utilizadas em meu portfolio</p>
@@ -37,8 +39,8 @@
                <a class="btn btn-outline-success" href="tecnologias.html" target="_blank">Mais Detalhes</a>
             </div>
          </div>
-         <div class="card">
-            <iframe class="card-img-top" height="200" src="https://www.youtube.com/embed/C0HZh5Y7zao" title="RH do Futuro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <div class="card" id="cardvideo">
+            <iframe id="videoyoutube" class="card-img-top" height="200" src="https://www.youtube.com/embed/C0HZh5Y7zao" title="RH do Futuro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="card-body">
                <h5 class="card-title">RH do Futuro</h5>
                <p class="card-text">Protagonismo dos colaboradores, descentralização do RH, gestão em tempo real: sua empresa está preparada para a nova era? 
@@ -52,7 +54,7 @@
       </div>
       <br><br><br><br><br><br><br><br>
 
-      <!-- Rodapé -->
-      <script src="lib/rodape.js"></script>
+      <!-- Puxando o rodapé da página com javascript -->
+      <script src="lib/rodape.js" id="jvrodape"></script>
    </body>
 </html>

@@ -7,15 +7,17 @@
       <meta name="keywords" content="html, css, javascript">
       <meta name="description" content="Trabalho HTML + CSS">
       <meta name="author" content="Pedro Nascimento Silva">
+      <!-- Linkando tecnologia bootstrap e arquivos css+javascript -->
       <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
       <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
       <link href="lib/css-local.css" rel="stylesheet">
    </head>
    <body>
-      <script src="lib/menu.js"></script>
+      <!-- Puxando o menu da página com javascript -->
+      <script src="lib/menu.js" id="jvmenu"></script>
       
          <br>
-         <div class="centralizar">
+         <div class="centralizar" id="divcontato">
             <div>
                <h4>Informações de contato:</h4>
                <a href="https://wa.me/5532984823482?text=" target="_blank"><img class="bordasocial" src="assets/img/what.jpg" width="40px" height="40px"></a> &nbsp  &nbsp
@@ -25,11 +27,11 @@
             <br><br>
             <div>
                <h6>Entre em contato</h6>
-               <form action="contato.html">
+               <form action="contato.html" id="envio">
                   <input class="borda"   placeholder="Digite seu nome" type="text" id="ipt_nome" name="ipt_nome">
                   <br><br>
                   <input class="borda"  placeholder="Email" type="email" id="ipt_email" name="ipt_email"><br><br>
-                  <select class="borda"  tabindex="1" id="#" name="input[3|Assunto]" required="" aria-required="true">
+                  <select class="borda"  tabindex="1" id="assunto" name="input[3|Assunto]" aria-required="true">
                      <option value="" selected="" disabled="">Assunto *</option>
                      <option value="Dúvida">Dúvida</option>
                      <option value="Orçamento">Projetos</option>
@@ -38,11 +40,13 @@
                   <br>
                   <br>
                   <br><br>
-                  <input id="bordabotao1" type="submit" value="Enviar" class="btn btn-success" > 
-                  <input id="bordabotao2" type="reset" value="Cancelar" class="btn btn-success">
+                  <input id="bordabotao1" type="submit" value="Enviar" class="btn btn-success" id="campobotao1"> 
+                  <input id="bordabotao2" type="reset" value="Cancelar" class="btn btn-success" id="campobotao2">
                </form>
             </div>
          </div>
-         <script src="lib/rodape.js"></script>
+
+         <!-- Puxando o rodapé da página com javascript -->
+         <script src="lib/rodape.js" id="jvrodape"></script>
    </body>
 </html>

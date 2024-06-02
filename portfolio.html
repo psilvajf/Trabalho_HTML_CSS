@@ -7,18 +7,21 @@
       <meta name="keywords" content="html, css, javascript">
       <meta name="description" content="Trabalho HTML + CSS">
       <meta name="author" content="Pedro Nascimento Silva">
+      <!-- Linkando tecnologia bootstrap e arquivos css+javascript -->
       <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
       <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
       <link href="lib/css-local.css" rel="stylesheet">
    </head>
    <body>
-      <script src="lib/menu.js"></script>
-      
-         <div class="centrocard">
+      <!-- Puxando o menu da página com javascript -->
+      <script src="lib/menu.js" id="jvmenu"></script>
+
+          <!-- Descrevendo projetos desenvolvidos -->
+         <div class="centrocard" id="divproj">
             <h3>Projetos desenvolvidos</h3>
             <div id="card1" class="card border-dark mb-3">
                <div class="card mb-3">
-                  <img src="assets/img/proj-hospital.jpg" class="card-img-top" alt="...">
+                  <img src="assets/img/proj-hospital.jpg" class="card-img-top" id="projimg1">
                   <div class="card-body">
                      <h5 class="card-title"><a href="https://www.sistemacolmeia.com.br/" target="_blank">1. Sistema de Gestão Hospitalar Inteligente</a></h5>
                      <p class="card-text">Descrição:
@@ -33,7 +36,7 @@
             </div>
             <div id="card2" class="card border-dark mb-3">
                <div class="card mb-3">
-                  <img src="assets/img/proj-energia.jpg" class="card-img-top" alt="...">
+                  <img src="assets/img/proj-energia.jpg" class="card-img-top" id="projimg2">
                   <div class="card-body">
                      <h5 class="card-title"><a href="https://www.siemens.com/br/pt/produtos/software/energia/gerenciamento-de-energia.html" target="_blank">2. Sistema de Gerenciamento de Energia Inteligente</a></h5>
                      <p class="card-text">Descrição:
@@ -48,7 +51,7 @@
             </div>
             <div id="card3" class="card border-dark mb-3">
                <div class="card mb-3">
-                  <img src="assets/img/proj-transporte.jpg" class="card-img-top" alt="...">
+                  <img src="assets/img/proj-transporte.jpg" class="card-img-top" id="projimg3">
                   <div class="card-body">
                      <h5 class="card-title"><a href="https://securitybusiness.com.br/smart-city-business-brazil-debate-mobilidade/" target="_blank">3. Sistema de Gestão de Transporte Público com Big Data</a> </h5>
                      <p class="card-text">Desenvolvimento de um sistema para otimizar a gestão do transporte público utilizando análise de Big Data para melhorar a eficiência das rotas e o atendimento aos passageiros.
@@ -63,7 +66,7 @@
             </div>
             <div id="card4" class="card border-dark mb-3">
                <div class="card mb-3">
-                  <img src="assets/img/proj-voz.jpg" class="card-img-top" alt="...">
+                  <img src="assets/img/proj-voz.jpg" class="card-img-top" id="projimg4">
                   <div class="card-body">
                      <h5 class="card-title"><a href="https://www.berlitz.com/pt-br/blog/pronuncia-em-ingles-saiba-como-melhorar-com-reconhecimento-de-voz" target="_blank">4. Plataforma de Aprendizado de Idiomas com Reconhecimento de Voz </a></h5>
                      <p class="card-text">Descrição:
@@ -78,7 +81,7 @@
             </div>
             <div id="card5" class="card border-dark mb-3">
                <div class="card mb-3">
-                  <img src="assets/img/proj-financeiro.jpg" class="card-img-top" alt="...">
+                  <img src="assets/img/proj-financeiro.jpg" class="card-img-top" id="projimg5">
                   <div class="card-body">
                      <h5 class="card-title"><a href="https://www.meudinheiroweb.com.br/" target="_blank">5. Plataforma de Controle Financeiro Pessoal</a></h5>
                      <p class="card-text">Descrição:
@@ -92,6 +95,8 @@
                </div>
             </div>
          </div>
-         <script src="lib/rodape.js"></script>
+
+         <!-- Puxando o rodapé da página com javascript -->
+         <script src="lib/rodape.js" id="jvrodape"></script>
    </body>
 </html>
